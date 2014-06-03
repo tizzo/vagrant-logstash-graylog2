@@ -9,6 +9,9 @@ FORGE
     ispavailability/file_concat (0.1.0)
     puppetlabs/apt (1.4.2)
       puppetlabs/stdlib (>= 2.2.1)
+    puppetlabs/mongodb (0.8.0)
+      puppetlabs/apt (>= 1.0.0)
+      puppetlabs/stdlib (>= 2.2.0)
     puppetlabs/stdlib (4.2.1)
 
 GIT
@@ -22,6 +25,7 @@ DEPENDENCIES
   elasticsearch/elasticsearch (>= 0)
   elasticsearch/logstash (>= 0)
   puppetlabs/apt (>= 0)
+  puppetlabs/mongodb (>= 0)
   puppetlabs/stdlib (>= 0)
   tizzo/graylog2 (>= 0)
 

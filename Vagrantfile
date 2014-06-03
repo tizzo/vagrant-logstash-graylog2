@@ -5,10 +5,15 @@
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  config.vm.hostname = 'logging-demo'
   config.vm.box = "lapew"
   #config.vm.box_url = "http://domain.com/path/to/above.box"
   config.vm.network "private_network", type: "dhcp"
   config.vm.network :private_network, ip: "192.168.33.253"
+  config.vm.provider "virtualbox" do |v|
+    v.memory = 2560
+    v.cpus = 2
+  end
 
   # Install puppet.
   # config.vm.provision "shell", path: "scripts/puppet_setup.sh"
