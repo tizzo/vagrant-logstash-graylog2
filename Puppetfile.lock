@@ -1,0 +1,27 @@
+FORGE
+  remote: http://forge.puppetlabs.com
+  specs:
+    elasticsearch/elasticsearch (0.3.2)
+      puppetlabs/stdlib (>= 3.2.0)
+    elasticsearch/logstash (0.5.1)
+      ispavailability/file_concat (>= 0.1.0)
+      puppetlabs/stdlib (>= 3.2.0)
+    ispavailability/file_concat (0.1.0)
+    puppetlabs/apt (1.4.2)
+      puppetlabs/stdlib (>= 2.2.1)
+    puppetlabs/stdlib (4.2.1)
+
+GIT
+  remote: https://github.com/tizzo/puppet-graylog2.git
+  ref: master
+  sha: 6169fbb911e7e0306e433a124d5f01d37caba9ce
+  specs:
+    tizzo/graylog2 (0.0.1)
+
+DEPENDENCIES
+  elasticsearch/elasticsearch (>= 0)
+  elasticsearch/logstash (>= 0)
+  puppetlabs/apt (>= 0)
+  puppetlabs/stdlib (>= 0)
+  tizzo/graylog2 (>= 0)
+
