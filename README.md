@@ -1,6 +1,6 @@
 # Puppet Graylog2 Logstash
 
-This project provides an example
+This project provides an example of how to setup Logstash and Graylog2 to collect logs using a Drupal site as the example application.
 
 ## Installation
 
